@@ -11,13 +11,29 @@
 				margin: auto;
 				text-align: center;
 			}
+			#timespan{
+				color: red;
+			}
 		</style>
 	</head>
-	<body>
+	<body onload="pastTime()">
 		<div class="f5">
 			<h2>您刷新页面过快请稍后再试</h2>
 			<hr >
 			<img src="img/error.jpg" >
+			<h2><span id="timespan">5</span>秒后将跳转...</h2>
 		</div>
 	</body>
 </html>
+<script type="text/javascript">
+	function pastTime(){
+		window.setInterval(function(){//间隔执行
+			var span=document.getElementById("timespan");//获取span标签
+			span.innerHTML=span.innerHTML-1;
+			//时间到0是跳转
+			if(span.innerHTML==0){
+				location.href="https://myzhenyan.ga";
+			}
+		},1000);
+	}
+</script>
