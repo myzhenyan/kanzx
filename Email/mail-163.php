@@ -76,7 +76,7 @@ if(isset($_POST["getEmail"])){
 </head>
 <body onload="pastTime()">
 	<h2><span id="timeSpan">5</span>秒後返回...</h2>
-	<p><a href="index.php">立即返回</a></p>
+	<p><a href="index.html">立即返回</a></p>
 </body>
 </html>
 <script type="text/javascript">
@@ -86,7 +86,7 @@ if(isset($_POST["getEmail"])){
 			times.innerHTML=times.innerHTML-1;
 			//时间到0是跳转
 			if(times.innerHTML==0){
-				location.href="index.php";
+				location.href="index.html";
 			}
 		},1000);
 	}
