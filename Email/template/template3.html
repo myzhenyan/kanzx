@@ -1,0 +1,70 @@
+<!-- 模板二：这个模板带有背景图片，若收件方是QQ邮箱，最好也使用QQ邮箱来发送，不然图片可能不被显示。 -->
+<style type="text/css">
+	*{margin: 0px;padding: 0px;}
+	#email{
+		position: relative;
+		width: 530px;
+		height: 466px;
+		margin: auto;
+		-webkit-transition: all 1s ease-in-out .3s;
+		-moz-transition: all 1s ease-in-out .3s;
+		-o-transition: all 1s ease-in-out .3s;
+		transition: all 1s ease-in-out .3s;
+	}
+	#text{
+		width: 400px;
+		height: 260px;
+		border: solid 1px #fff;
+		margin: auto;
+		text-indent:2em;
+		overflow: hidden;/*隐藏超出范围的多余代码*/
+		background-color: bisque;
+		position: relative;
+		top: 190px;
+		border-radius: 3px;
+		-moz-border-radius: 3px; -webkit-border-radius: 3px;
+		box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+		-moz-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 14px #fff;
+		-webkit-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+		-webkit-transition: all 1s ease-in-out .3s;
+		-moz-transition: all 1s ease-in-out .3s;
+		-o-transition: all 1s ease-in-out .3s;
+		transition: all 1s ease-in-out .3s;
+	}
+	.p{padding: 5px 5px 0px 10px;}/*由于p标签在手机上的浏览器不兼容换了div*/
+	/*伪类*/
+	#text a:hover{font-size: 18px;color: green;}
+	#email:before{
+		content: "";
+		position: absolute;
+		bottom: 128px;
+		left: 0px;
+		background-image: url(https://myzhenyan.github.io/kanzx/emailBg/email-head.png);
+		width: 530px;
+		height: 316px;
+	}
+	#email:after{
+		content: "";
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		background-image: url(https://myzhenyan.github.io/kanzx/emailBg/email-footer.png);
+		width: 530px;
+		height: 260px;
+	}
+	#email:hover{
+		height:600px;
+	}
+	#text:hover{
+		top: 100px;
+	}
+</style>
+<div id="email">
+	<div id="text">
+		<div class="p"><b>Hi.朋友：您好！</b></div>
+		<div class="p">大千世界，茫茫人海，您知道吗？能看到这封信，您是多么幸运啊！有句话说：危险并不可怕，可怕的是，当巨大的险情来临时却不知道，这才是最让人痛惜的。衷心祝愿您与家人都有一个美好的未来，希望您能全家幸福平安，远离危险！</div>
+		<div class="p">您听说过三退保平安吗？这是个自救的天机，是对自己未来的选择，不妨在此了解一下。</div>
+		<div class="p">机缘难得，千万不要错过>>><a href="https://myzhenyan.github.io/kanzx" target="_blank"><b>前往了解三退</b></a></div>
+		<div class="p">打开天窗，看一看外面的世界>>><a href="https://myzhenyan.github.io/kanzx/fq" target="_blank"><b>翻墙工具</b></a></div>
+	</div>
+</div>
