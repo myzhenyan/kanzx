@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>加載中...</title>
+		<style type="text/css">
+			img{width: 600px;}
+			.sendmail{width: 600px;margin: 30px auto;text-align: center;}
+			#timespan{color: red;}
+		</style>
+	</head>
+	<body onload="pastTime()">
+		<div class="sendmail">
+			<img src="img/zn.jpg" alt="法正乾坤邪惡全滅">
+			<hr >
+			<h2><span id="timespan">5</span>秒後將跳轉發件頁面...</h2>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	function pastTime(){
+		window.setInterval(function(){
+			var span=document.getElementById("timespan");//获取span标签
+			span.innerHTML=span.innerHTML-1;
+			if(span.innerHTML==0){
+				location.href="https://sendmail.myzhenyan.ga";
+			}
+		},1000);
+	}
+</script>
