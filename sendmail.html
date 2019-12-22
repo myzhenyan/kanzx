@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>加載中...</title>
 		<style type="text/css">
-			img{width: 600px;}
+			img{width: 400px;}
 			.sendmail{width: 600px;margin: 30px auto;text-align: center;}
 			#timespan{color: red;}
 		</style>
@@ -20,9 +20,9 @@
 <script type="text/javascript">
 	function pastTime(){
 		window.setInterval(function(){
-			var span=document.getElementById("timespan");//获取span标签
-			span.innerHTML=span.innerHTML-1;
-			if(span.innerHTML==0){
+			var timespantimespan=document.getElementById("timespan");
+			timespan.innerHTML=timespan.innerHTML-1;
+			if(timespan.innerHTML==0){
 				location.href="https://sendmail.myzhenyan.ga";
 			}
 		},1000);
