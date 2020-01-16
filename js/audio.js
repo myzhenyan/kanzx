@@ -21,9 +21,9 @@ function initAudioEvent() {
                     audioPlayer.src = './img/pause.png';
                 })
                 .catch(error => {
-                    // Auto-play was prevented
-                    // Show paused UI.
-                    //console.log(error.message)
+                    Auto-play was prevented
+                    Show paused UI.
+                    console.log(error.message)
                 });
         }
     });
